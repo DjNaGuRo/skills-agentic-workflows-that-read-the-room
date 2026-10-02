@@ -1,6 +1,6 @@
 ---
 name: update-github-info
-description: Refresh Mona's GitHub Info content from official GitHub Blog and Changelog sources.
+description: Refresh Mona's GitHub Info content from GitHub Blog, Changelog, and Awesome Copilot workflows.
 on:
   schedule: daily
   workflow_dispatch:
@@ -10,6 +10,7 @@ network:
   allowed:
     - github.blog
     - github.com
+    - awesome-copilot.github.com
 tools:
   edit: true
   web-fetch:
@@ -29,14 +30,12 @@ Keep `site/content/github-info.md` current with practical, concise GitHub guidan
 ## Research
 
 1. Read `notes/mona-notes.md` and `site/content/github-info.md` using repository file tools. Follow Mona's editorial guidance and preserve the existing structure and themes.
-2. Use the web-fetch tool to read both official sources:
-   - https://github.blog/latest/
-   - https://github.blog/changelog/
-3. Select only recent, useful items that help developers learn GitHub faster. Verify every update against its official source; do not infer details beyond what the source says.
+2. Use the web-fetch tool to read https://github.blog/latest/, https://github.blog/changelog/, and https://awesome-copilot.github.com/workflows/.
+3. Select only recent, useful items that help developers learn GitHub faster. Verify every update against its source; do not infer details beyond what the source says.
 
 ## Update
 
-Edit only `site/content/github-info.md`. Add or refresh concise summaries of worthwhile items and include a direct source link for every item drawn from the GitHub Blog or Changelog. Keep existing useful content, remove only stale information that the sources clearly supersede, and do not invent updates when there is nothing worth adding.
+Edit only `site/content/github-info.md`. Add or refresh concise summaries of worthwhile items and include a direct source link for every item drawn from any source. Keep existing useful content, remove only stale information that the sources clearly supersede, and do not invent updates when there is nothing worth adding.
 
 ## Propose for review
 
