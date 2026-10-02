@@ -39,4 +39,4 @@ Edit only `site/content/github-info.md`. Add or refresh concise summaries of wor
 
 ## Propose for review
 
-If the file has meaningful changes, use the configured `create-pull-request` safe output to open one draft pull request for Mona to review. Summarize the updates and cite their official source URLs in the PR description. Do not push or write changes directly to the default branch. If there are no meaningful changes, do not open a pull request.
+If the file has meaningful changes, use the configured `create-pull-request` safe output to open one draft pull request for Mona to review. Summarize the updates and cite their official source URLs in the PR description. Do not push or write changes directly to the default branch. 
