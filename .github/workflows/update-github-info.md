@@ -8,7 +8,6 @@ permissions:
   contents: read
 network:
   allowed:
-    - defaults
     - github.blog
     - github.com
 tools:
@@ -19,6 +18,8 @@ tools:
 safe-outputs:
   create-pull-request:
     draft: true
+    fallback-as-issue: false
+    title-prefix: "[mona] "
 ---
 
 # Update GitHub Info
